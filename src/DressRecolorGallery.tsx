@@ -22,7 +22,7 @@ const createImage = (color: string | null) => {
   img.resize(fill().width(1000));
 
   if (color) {
-    img.effect(generativeRecolor('dress', color).multiple(true));
+    img.effect(generativeRecolor('(dress;belt;strap)', color).multiple(true));
   }
   return img;
 }
